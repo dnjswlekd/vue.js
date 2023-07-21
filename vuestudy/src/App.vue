@@ -28,6 +28,10 @@
     <p>{{ price2 }} 만원</p>
     <p>{{ products[2] }}</p>
   </div> -->
+
+
+  <input v-model="wonji">
+  <p>name: {{ nm2 }}</p>
 </template>
 
 <script>
@@ -37,6 +41,8 @@ export default {
   //데이터바인딩을 위한 데이터 보관함
   data(){
     return {
+      nm1: "wonji",
+      nm2: "sahun",
       openModal: false,
       신고수: 0,
       nm: ["원지", "세훈"],
